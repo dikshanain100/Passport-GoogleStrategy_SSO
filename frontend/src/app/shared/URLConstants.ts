@@ -10,6 +10,7 @@ export class URLConstants {
     public static logoutAPI = 'logout'
     public static landingAPI ='landing';
     public static balanceAPI ='balance';
+    public static ssoLogin ='ssoLogin';
     
 }
 

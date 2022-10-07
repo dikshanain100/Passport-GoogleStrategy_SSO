@@ -12,30 +12,15 @@ const routes: Routes = [
     path: 'login',
     loadChildren: './login/login.module#LoginModule'
   },
-  {
-    path: 'register',   
-    loadChildren: './register/register.module#RegisterModule'
-  },
   { 
     path: 'main', 
     loadChildren: './main/main.module#MainModule' ,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'formTable',
-    // loadChildren: () => import('./form-table/form-table.module').then(m => m.FormTableModule)
-    loadChildren: './form-table/form-table.module#FormTableModule',
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'matTable',
-    loadChildren: './mat-des-table/mat-des-table.module#MatDesTableModule',
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },
   {
     path: 'landing',   
     loadChildren: './landing-page/landing-page.module#LandingPageModule',
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   }
 ]   
 
